@@ -1,0 +1,301 @@
+@font-face {
+    font-family: 'dosislight';
+    src: url('../fonts/dosis-light-webfont.woff2') format('woff2'),
+         url('../fonts/dosis-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'dosisregular';
+    src: url('../fonts/dosis-regular-webfont.woff2') format('woff2'),
+         url('../fonts/dosis-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* reset start */
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 15px;
+}
+body{
+	margin: 0;
+	color: #777;
+	font-family: 'open_sanslight', sans-serif;
+	line-height: 26px;
+}
+a{
+	color: inherit;
+	text-decoration: none;
+}
+a:hover, a:active{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+img {
+	max-width: 100%;
+}
+button {
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+/* reset end */
+/* header start */
+#header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+#header .logo {
+    float: left;
+    line-height: 0;
+}
+#header .nav {
+	float: right;
+	font-size: 11px;
+	letter-spacing: .3em;
+	font-family: 'open_sansregular', sans-serif;
+	color: rgba(255, 255, 255, .75);
+}
+#header .nav li {
+    float: left;
+}
+#header li {
+    line-height: 21px;
+}
+#header .nav li + li {
+	margin-left: 30px;
+}
+/* header end */
+/* inner start */
+.inner {
+    background: url(../img/bg.jpg) no-repeat center / cover;
+    height: 100vh;
+    padding-top: 21px;
+}
+.inner::before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-left: -4px;
+}
+.inner-content {
+	display: inline-block;
+	max-width: 920px;
+	vertical-align: middle;
+}
+.inner-content h1 {
+	font-size: 30px;
+	font-family: 'dosisregular', sans-serif;
+	letter-spacing: 1.7em;
+	text-indent: 1.7em;
+	color: rgba(254, 254, 254, .9);
+	padding-bottom: 100px;
+}
+.inner-content span {
+	font-size: 19px;
+	font-family: 'open_sanslight', sans-serif;
+	color: rgba(254, 254, 254, .68);
+}
+/* inner end */
+/* Grid layout start */
+.container {
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: auto;
+}
+.container h3 {
+	font-size: 18px;
+	font-family: 'dosisregular', sans-serif;
+	letter-spacing: .5em;
+}
+.container-fluid {
+	padding: 0 15px;
+}
+.row {
+	margin: 0 -15px;
+}
+.row::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.col {
+	float: left;
+	position: relative;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.col-1{
+	width: 8.333333333%
+}
+.col-2{
+	width: 16.666666667%
+}
+.col-3{
+	width: 25%
+}
+.col-4{
+	width: 33.333333333%
+}
+.col-5{
+	width: 41.666666667%
+}
+.col-6{
+	width: 50%
+}
+.col-7{
+	width: 58.333333333%
+}
+.col-8{
+	width: 66.666666667%
+}
+.col-9{
+	width: 75%
+}
+.col-10{
+	width: 83.333333333%
+}
+.col-11{
+	width: 91.666666667%
+}
+.col-12{
+	width: 100%
+}
+.team-item-info {
+	font-family: 'dosisregular', sans-serif;
+	letter-spacing: .4em;
+	text-transform: uppercase;
+}
+.team-item-name {
+	font-size: 15px;
+	margin-top: 30px;
+}
+.team-item-role {
+	font-size: 12px;
+}
+/* Grid layout end */
+/* Default classes start */
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+.ttu {
+	text-transform: uppercase;
+} 
+.lh-text-blockquote {
+	line-height: 38px;
+	font-size: 24px;
+}
+.lh-text-blockquote span {
+	font-size: 11px;
+	letter-spacing: .2em;
+	font-family: 'open_sansregular', sans-serif;
+}
+.bg-black {
+	background-color: #111;
+}
+/* Default classes end */
+/* Default component start */
+.default-section {
+	padding: 135px 0;
+}
+.btn {
+	/* общие стили для всех кнопок */
+}
+.btn-default {
+	/* стили для черной кнопки */
+}
+.btn-large {
+	/* для кнопок серых и больших */
+}
+.btn-small {
+ 	/* для мал кнопок*/
+}
+.title {
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	color: #111;
+	letter-spacing: .5em;
+	font-weight: normal;
+	margin-bottom: 75px;			
+	/* font-family: Arial, Helvetica, sans-serif;							!!!!!!!! */
+}
+.title.title-light {
+	letter-spacing: .3em;
+	font-family: 'dosislight', sans-serif;
+
+}
+.title.title-white {
+	color: #fff;
+}
+/* Default component end */
+/* Custom style start */
+/* ===== About studio start ===== */
+.about-studio .row + .row {
+	margin-top: 100px;
+}
+.team-item-info span{
+	display: block;
+}
+/* ===== About studio end ===== */
+/* ===== Lets talk start ===== */
+.lets-talk-wrapper {
+	padding-top: 140px;
+	padding-bottom: 140px;
+}
+.lets-talk-img {
+	margin-top: -32px;
+}
+.lets-talk .default-text {
+	color: rgba(255, 255, 255, .7);
+}
+/* ===== Lets talk end ===== */
+.why-choose-us .row + .row {
+	margin-top: 80px;
+}
+.advantage-icon {
+	font-size: 48px;
+}
+.advantage-title {
+	font-family: 'dosisregular', sans-serif;
+	letter-spacing: .4em;
+	text-transform: uppercase;
+	padding: 35px 0;
+}
+
+/* Custom style end */
+
+
+
+
+
+
+
+
+
