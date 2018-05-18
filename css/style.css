@@ -38,8 +38,6 @@ html {
 body{
 	margin: 0;
 	color: #777;
-	font-family: 'open_sanslight', sans-serif;
-	line-height: 26px;
 }
 a{
 	color: inherit;
@@ -60,6 +58,69 @@ button {
 	cursor: pointer;
 }
 /* reset end */
+/* Default classes start */
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+.default-text {
+	font-family: 'open_sanslight', sans-serif;
+	line-height: 1.73rem; 
+}
+.bg-black {
+	background-color: #111;
+}
+/* Default classes end */
+/* Default component start */
+.default-section {
+	padding: 135px 0;
+}
+.btn {
+	display: inline-block;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-family: 'open_sansregular', sans-serif;
+	border-radius: 1px;
+	letter-spacing: .2em;
+}
+.btn-default {
+	font-size: 0.86rem;
+	color: #fff;
+	background-color: rgb(50, 50, 50);
+	padding: 12px 20px;
+}
+.btn-large {
+	font-size: 0.93rem;
+	color: #111;
+	background-color: rgb(207, 207, 207);
+	padding: 1rem 2.66rem; 
+}
+.btn-small {
+	font-size: 0.73rem;
+	color: #777;
+	background-color: rgb(229, 229, 229);
+	padding: 9px 15px;
+}
+.title {
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	color: #111;
+	letter-spacing: .5em;
+	font-weight: normal;
+	margin-bottom: 75px;			
+	font-family: 'dosisregular', sans-serif;						
+}
+.title.title-light {
+	letter-spacing: .3em;
+	font-family: 'dosislight', sans-serif;
+	margin-bottom: 25px;
+}
+.title.title-white {
+	color: #fff;
+}
+/* Default component end */
 /* header start */
 #header {
     position: fixed;
@@ -68,32 +129,37 @@ button {
     left: 0;
     z-index: 999;
 }
+.container-fluid {
+	padding: 0 15px;
+	margin-top: 25px;
+}
 #header .logo {
     float: left;
     line-height: 0;
 }
 #header .nav {
 	float: right;
-	font-size: 11px;
+	font-size: .73rem;
 	letter-spacing: .3em;
 	font-family: 'open_sansregular', sans-serif;
 	color: rgba(255, 255, 255, .75);
+	text-transform: uppercase;
 }
 #header .nav li {
     float: left;
 }
 #header li {
-    line-height: 21px;
+    line-height: 1.4rem;
 }
 #header .nav li + li {
-	margin-left: 30px;
+	margin-left: 2rem;
 }
 /* header end */
 /* inner start */
 .inner {
     background: url(../img/bg.jpg) no-repeat center / cover;
     height: 100vh;
-    padding-top: 21px;
+    padding-top: 2.2rem;
 }
 .inner::before {
 	content: '';
@@ -108,15 +174,16 @@ button {
 	vertical-align: middle;
 }
 .inner-content h1 {
-	font-size: 30px;
+	font-size: 2rem;
 	font-family: 'dosisregular', sans-serif;
 	letter-spacing: 1.7em;
 	text-indent: 1.7em;
 	color: rgba(254, 254, 254, .9);
 	padding-bottom: 100px;
+	text-transform: uppercase;
 }
 .inner-content span {
-	font-size: 19px;
+	font-size: 1.26rem;
 	font-family: 'open_sanslight', sans-serif;
 	color: rgba(254, 254, 254, .68);
 }
@@ -126,14 +193,6 @@ button {
 	max-width: 1200px;
 	padding: 0 15px;
 	margin: auto;
-}
-.container h3 {
-	font-size: 18px;
-	font-family: 'dosisregular', sans-serif;
-	letter-spacing: .5em;
-}
-.container-fluid {
-	padding: 0 15px;
 }
 .row {
 	margin: 0 -15px;
@@ -185,76 +244,7 @@ button {
 .col-12{
 	width: 100%
 }
-.team-item-info {
-	font-family: 'dosisregular', sans-serif;
-	letter-spacing: .4em;
-	text-transform: uppercase;
-}
-.team-item-name {
-	font-size: 15px;
-	margin-top: 30px;
-}
-.team-item-role {
-	font-size: 12px;
-}
 /* Grid layout end */
-/* Default classes start */
-.text-center {
-	text-align: center;
-}
-.text-right {
-	text-align: right;
-}
-.ttu {
-	text-transform: uppercase;
-} 
-.lh-text-blockquote {
-	line-height: 38px;
-	font-size: 24px;
-}
-.lh-text-blockquote span {
-	font-size: 11px;
-	letter-spacing: .2em;
-	font-family: 'open_sansregular', sans-serif;
-}
-.bg-black {
-	background-color: #111;
-}
-/* Default classes end */
-/* Default component start */
-.default-section {
-	padding: 135px 0;
-}
-.btn {
-	/* общие стили для всех кнопок */
-}
-.btn-default {
-	/* стили для черной кнопки */
-}
-.btn-large {
-	/* для кнопок серых и больших */
-}
-.btn-small {
- 	/* для мал кнопок*/
-}
-.title {
-	font-size: 1.2rem;
-	text-transform: uppercase;
-	color: #111;
-	letter-spacing: .5em;
-	font-weight: normal;
-	margin-bottom: 75px;			
-	/* font-family: Arial, Helvetica, sans-serif;							!!!!!!!! */
-}
-.title.title-light {
-	letter-spacing: .3em;
-	font-family: 'dosislight', sans-serif;
-
-}
-.title.title-white {
-	color: #fff;
-}
-/* Default component end */
 /* Custom style start */
 /* ===== About studio start ===== */
 .about-studio .row + .row {
@@ -263,11 +253,38 @@ button {
 .team-item-info span{
 	display: block;
 }
+.team-item-info {
+	font-family: 'dosisregular', sans-serif;
+	letter-spacing: .4em;
+	text-transform: uppercase;
+}
+.team-item-name {
+	font-size: 1rem;
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+.team-item-role {
+	font-size: .8rem;
+}
+.text-blockquote {
+	line-height: 38px;
+	font-size: 1.6rem;
+	font-family: 'open_sanslight', sans-serif;
+}
+.text-blockquote span {
+	font-size: .73rem;
+	letter-spacing: .2em;
+	font-family: 'open_sansregular', sans-serif;
+	text-transform: uppercase;
+}
 /* ===== About studio end ===== */
 /* ===== Lets talk start ===== */
 .lets-talk-wrapper {
 	padding-top: 140px;
 	padding-bottom: 140px;
+}
+.lets-talk-wrapper p {
+	margin-bottom: 40px;
 }
 .lets-talk-img {
 	margin-top: -32px;
@@ -276,11 +293,12 @@ button {
 	color: rgba(255, 255, 255, .7);
 }
 /* ===== Lets talk end ===== */
+/* .why-choose-us start*/
 .why-choose-us .row + .row {
 	margin-top: 80px;
 }
 .advantage-icon {
-	font-size: 48px;
+	font-size: 3.2rem;
 }
 .advantage-title {
 	font-family: 'dosisregular', sans-serif;
@@ -288,6 +306,7 @@ button {
 	text-transform: uppercase;
 	padding: 35px 0;
 }
+/* .why-choose-us end */
 
 /* Custom style end */
 
