@@ -95,7 +95,7 @@ button {
 	font-size: 0.93rem;
 	color: #111;
 	background-color: rgb(207, 207, 207);
-	padding: 1rem 2.66rem; 
+	padding: 0.7rem 2.66rem; 
 }
 .btn-small {
 	font-size: 0.73rem;
@@ -131,7 +131,6 @@ button {
 }
 .container-fluid {
 	padding: 0 15px;
-	margin-top: 25px;
 }
 #header .logo {
     float: left;
@@ -257,10 +256,10 @@ button {
 	font-family: 'dosisregular', sans-serif;
 	letter-spacing: .4em;
 	text-transform: uppercase;
+	margin-top: 30px;
 }
 .team-item-name {
 	font-size: 1rem;
-	margin-top: 30px;
 	margin-bottom: 15px;
 }
 .team-item-role {
@@ -305,6 +304,7 @@ button {
 	letter-spacing: .4em;
 	text-transform: uppercase;
 	padding: 35px 0;
+	font-size: 0.93em;
 }
 /* .why-choose-us end */
 
