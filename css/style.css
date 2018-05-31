@@ -169,7 +169,7 @@ textarea.form-control {
     right: 0;
     left: 0;
 	z-index: 999;
-	padding-top: 26px;
+	padding: 25px 0;
 }
 .container-fluid {
 	padding: 0 15px;
@@ -669,10 +669,11 @@ blockquote p {
 /* .why-choose-us end */
 /* ===== Reviews start ===== */
 .reviews {	
-	padding-top: 140px;
+	overflow: hidden;
 }
 .reviews-title{
 	font-size: 2.1333rem;
+	padding-top: 140px;
 }
 .reviews-carousel{
 	padding-bottom: 140px;
@@ -695,18 +696,48 @@ blockquote p {
 }
 .slick-arrow {
 	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
+	top: 0;
+	height: 100%;
+	width: 90px;
 	z-index: 1;
+	cursor: pointer;
 }
 .slick-arrow.slick-prev {
 	left: 0;
-	top: 0;
 }
 .slick-arrow.slick-next {
 	right: 0;
-	top: 0;
 }
+.slick-arrow .carousel-button {
+	width: 63px;
+	height: 63px;
+	background-color: #fff;
+	transform: rotate(-45deg);
+	position: absolute;
+	top: 50%;
+	margin-top: -31px;
+	margin-left: -32px;
+}
+
+.slick-arrow .carousel-button .fa {
+	position: absolute;
+	transform: rotate(45deg);
+	font-size: 10px;
+}
+.slick-arrow.slick-next .carousel-button .fa {
+	top: 15px;
+	left: 15px;
+}
+.slick-arrow.slick-prev .carousel-button .fa {
+	bottom: 15px;
+	right: 15px;
+}
+
+.slick-next .carousel-button {
+	margin-right: -32px;
+	right: 0;
+}
+
 .slick-dots {
 	position: absolute;
 	bottom: 30px;
