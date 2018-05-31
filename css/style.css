@@ -155,6 +155,12 @@ textarea.form-control {
 		padding: 80px 0;
 	}
 }
+
+@media (max-width: 767px) {
+	.default-section {
+		padding: 40px 0;
+	}
+}
 /* Default component end */
 /* header start */
 #header {
@@ -198,6 +204,11 @@ textarea.form-control {
 		display: block;
 	}
 }
+@media (max-width: 767px) {
+	#header {
+		padding-top: 10px;
+	}
+}
 /* header end */
 /* inner start */
 .inner {
@@ -234,8 +245,15 @@ textarea.form-control {
 @media (max-width: 911px) {
 	.inner-content h1 {
 		letter-spacing: .7em;
-	text-indent: .7em;
-	padding-bottom: 50px;
+		text-indent: .7em;
+		padding-bottom: 50px;
+	}
+}
+@media (max-width: 576px) {
+	.inner-content h1 {
+		letter-spacing: .3em;
+		text-indent: 0em;
+		padding-bottom: 50px;
 	}
 }
 /* inner end */
@@ -379,7 +397,44 @@ textarea.form-control {
 		display: none;
 	}
 }
-
+@media (max-width: 767px) {
+	.col-sd-1{
+		width: 8.333333333%
+	}
+	.col-sd-2{
+		width: 16.666666667%
+	}
+	.col-sd-3{
+		width: 25%
+	}
+	.col-sd-4{
+		width: 33.333333333%
+	}
+	.col-sd-5{
+		width: 41.666666667%
+	}
+	.col-sd-6{
+		width: 50%
+	}
+	.col-sd-7{
+		width: 58.333333333%
+	}
+	.col-sd-8{
+		width: 66.666666667%
+	}
+	.col-sd-9{
+		width: 75%
+	}
+	.col-sd-10{
+		width: 83.333333333%
+	}
+	.col-sd-11{
+		width: 91.666666667%
+	}
+	.col-sd-12{
+		width: 100%
+	}
+}
 
 /* Grid layout end */
 /* Default classes start */
@@ -440,6 +495,22 @@ blockquote p {
 	letter-spacing: .2em;
 	text-transform: uppercase;
 }
+@media (max-width: 767px) {
+	.row .col .team-item {
+		text-align: center;
+	}
+	.team-item-role {
+		padding-bottom: 30px;
+	}
+	.team-item-info {
+		margin-top: 5px;
+	}
+	.text-blockquote {
+		line-height: 30px;
+		font-size: 1.4rem;
+	}
+}
+
 /* ===== About studio end ===== */
 /* ===== Services start ===== */
 .services-tab ul {
@@ -471,6 +542,19 @@ blockquote p {
 		letter-spacing: 0.2em;
 	}
 }
+@media (max-width: 767px) {
+	.services-tab ul li {
+		width: 33.3333%;
+		margin-bottom: 15px;
+	}
+}
+@media (max-width: 576px) {
+	.services-tab ul li {
+		width: 50%;
+		margin-bottom: 15px;
+	}
+}
+
 /* ===== Services end ===== */
 /* ===== Lets talk start ===== */
 .lets-talk-wrapper {
@@ -485,6 +569,12 @@ blockquote p {
 }
 .lets-talk .default-text {
 	color: rgba(255, 255, 255, .7);
+}
+
+@media (max-width: 767px) {
+	.lets-talk-wrapper {
+		text-align: center;
+	}
 }
 /* ===== Lets talk end ===== */
 /* ===== Portfolio start ===== */
@@ -542,6 +632,25 @@ blockquote p {
 		width: 50%;
 	}
 }
+
+@media (max-width: 767px) {
+	.portfolio-tab ul li {
+		padding-bottom: 10px;
+		display: block;
+	}
+	.portfolio-tab ul li+ li {
+		margin-left: 5px;
+	}
+	.portfolio-item {
+		width: 100%;
+		padding-top: 30px;
+	}
+	.portfolio-item + .portfolio-item {
+		border-top: 2px solid #000;
+	}
+}
+
+
 /* ===== Portfolio end ===== */
 /* .why-choose-us start*/
 .why-choose-us .row + .row {
@@ -636,6 +745,18 @@ blockquote p {
 		max-width: 650px;
 	}
 }
+@media (max-width: 767px) {
+	.review-wrapper {
+		max-width: 450px;
+	}
+}
+@media (max-width: 576px) {
+	.review-wrapper {
+		margin-top: 50px;
+		font-size: 1rem;
+		line-height: 1.4em;
+	}
+}
 /* ===== Reviews end ===== */
 /* Latest news start */
 .title-news .all-news {
@@ -686,6 +807,15 @@ blockquote p {
 		border-top: 2px solid #000;
 	}
 }
+@media (max-width: 576px) {
+	.latest-news .container .title-news .title {
+		margin-bottom: 25px;
+	}
+	.title-news .all-news {
+		float: none;
+		margin-top: none;
+	}
+}
 /* Latest news end */
 /* stay-informed start */
 .stay-informed input {
@@ -703,6 +833,13 @@ blockquote p {
 }
 .stay-informed .form-info {
 	float: none;
+}
+
+@media (max-width: 576px) {
+	.stay-informed input {
+		min-width: 290px;
+		margin-bottom: 15px;
+	}
 }
 /* stay-informed end */
 /* ===== Contacts start ===== */
@@ -756,6 +893,15 @@ blockquote p {
 .form-info .text-info {
 	font-family: 'open_sansregular',sans-serif;
 	font-size: .73rem;
+}
+@media (max-width: 767px) {
+	.pb-contact {
+		padding-bottom: 10px;
+	}
+	.form-col {
+		width: 100%;
+		padding: 5px;
+	}
 }
 /* ===== Contacts end ===== */
 /* ===== Map start ===== */
