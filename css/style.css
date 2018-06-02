@@ -657,13 +657,18 @@ blockquote p {
 }
 @media (max-width: 576px) {
 	.team-item-skills {
-		max-height: 353px; 
+		max-height: 450px; 
 	}
 	.team-item-skills span {
 		padding-bottom: 15px;
 		padding-top: 10px;
 	} 
 
+}
+@media (max-width: 400px) {
+	.team-item-skills {
+		max-height: 353px; 
+	}
 }
 
 /* ===== About studio end ===== */
