@@ -42,3 +42,24 @@ function onClick(e) {
 }
 
 scrollBtn.on('click', onClick); // отслеживаем событие клик на все элементы с атрр data-scroll
+
+//for mobile scroll
+function scrollTo(){
+    // Scroll to element
+    const scrollBtn = $('[data-scroll]');
+  
+    function onScroll(e) {
+        e.preventDefault();
+  
+        // Close slick nav
+        $('.header-nav').slicknav('close');
+        let target = $(this).attr('data-scroll');
+        let dist = $(target).offset().top;
+        $('html, body').animate({scrollTop: dist}, 1000, 'swing');
+    }
+  
+    scrollBtn.on('click', onScroll);
+   }
+  
+  
+   $(window).on('load', scrollTo);
