@@ -655,6 +655,17 @@ blockquote p {
 		font-size: 1.4rem;
 	}
 }
+@media (max-width: 576px) {
+	.team-item-skills {
+		max-height: 353px; 
+	}
+	.team-item-skills span {
+		padding-bottom: 15px;
+		padding-top: 10px;
+	} 
+
+}
+
 /* ===== About studio end ===== */
 /* ===== Services start ===== */
 .services-tab ul {
